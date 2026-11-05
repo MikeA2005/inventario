@@ -14,8 +14,9 @@ class DBHelper {
             nombre TEXT NOT NULL,
             telefono TEXT,
             correo TEXT
-          );
-
+          )
+        ''');
+        await database.execute('''
           CREATE TABLE productos(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             nombre TEXT NOT NULL,

@@ -15,8 +15,8 @@ class Proveedor {
     return Proveedor(
       id: map['id'] as int?,
       nombre: map['nombre'] as String,
-      telefono: map['telefono'] as String,
-      correo: map['correo'] as String,
+      telefono: map['telefono'] as String? ?? '',
+      correo: map['correo'] as String? ?? '',
     );
   }
 
