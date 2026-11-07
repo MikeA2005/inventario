@@ -63,7 +63,7 @@ class InventarioApp extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xff3157D5),
             foregroundColor: Colors.white,
-            minimumSize: const Size(double.infinity, 52),
+            minimumSize: const Size(0, 52),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(14),
             ),

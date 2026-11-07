@@ -24,7 +24,7 @@ class ConfirmDialog {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.grey),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.grey, foregroundColor: Colors.white, minimumSize: const Size(100, 40)),
                   onPressed: () {
                     Navigator.pop(context, false);
                   },
@@ -32,7 +32,7 @@ class ConfirmDialog {
                 ),
 
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red, foregroundColor: Colors.white, minimumSize: const Size(100, 40)),
                   onPressed: () {
                     Navigator.pop(context, true);
                   },
@@ -44,7 +44,7 @@ class ConfirmDialog {
         );
       },
     );
-
+    debugPrint('Resultado del diálogo: $resultado');
     return resultado ?? false;
   }
 }
